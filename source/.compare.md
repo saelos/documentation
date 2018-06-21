@@ -20,6 +20,8 @@ toc_footers:
 Welcome to the Saelos API reference.
 [Get Postman Collection](http://saelos.test/Users/dgilbert/Sites/saelos-documentation/collection.json)
 
+The examples you see to the right use [`GuzzleHttp`](https://packagist.org/packages/guzzlehttp/guzzle)
+for PHP, `jQuery` for javascript, and `cURL` for bash.
 <!-- END_INFO -->
 
 #Activities

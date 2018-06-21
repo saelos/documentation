@@ -252,12 +252,41 @@ $response = $client-&gt;get("http://saelos.test/api/v1/companies");</code></pre>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/companies" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "name"="quis" \
+    -d "description"="quis" \
+    -d "address1"="quis" \
+    -d "address2"="quis" \
+    -d "city"="quis" \
+    -d "state"="quis" \
+    -d "zip"="quis" \
+    -d "country"="quis" \
+    -d "phone"="quis" \
+    -d "fax"="quis" \
+    -d "website"="quis" \
+    -d "info"="quis" \
+    -d "custom_fields"="quis" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/companies",
     "method": "POST",
+    "data": {
+        "name": "quis",
+        "description": "quis",
+        "address1": "quis",
+        "address2": "quis",
+        "city": "quis",
+        "state": "quis",
+        "zip": "quis",
+        "country": "quis",
+        "phone": "quis",
+        "fax": "quis",
+        "website": "quis",
+        "info": "quis",
+        "custom_fields": "quis"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -267,12 +296,118 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/companies");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/companies", [
+    RequestOptions::JSON =&gt; [
+        "name" =&gt; "quis",
+        "description" =&gt; "quis",
+        "address1" =&gt; "quis",
+        "address2" =&gt; "quis",
+        "city" =&gt; "quis",
+        "state" =&gt; "quis",
+        "zip" =&gt; "quis",
+        "country" =&gt; "quis",
+        "phone" =&gt; "quis",
+        "fax" =&gt; "quis",
+        "website" =&gt; "quis",
+        "info" =&gt; "quis",
+        "custom_fields" =&gt; "quis",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/companies</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>address1</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address2</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>zip</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>country</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>fax</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>website</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>info</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_7be8cb2d15a57d2062ece90d5b8f8269 -->
 <!-- START_e89f2c83d01fbd40254236b3b8dc1d6c -->
 <h2>Fetch a single Company</h2>
@@ -315,12 +450,41 @@ $response = $client-&gt;get("http://saelos.test/api/v1/companies/{company}");</c
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://saelos.test/api/v1/companies/{company}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "name"="rem" \
+    -d "description"="rem" \
+    -d "address1"="rem" \
+    -d "address2"="rem" \
+    -d "city"="rem" \
+    -d "state"="rem" \
+    -d "zip"="rem" \
+    -d "country"="rem" \
+    -d "phone"="rem" \
+    -d "fax"="rem" \
+    -d "website"="rem" \
+    -d "info"="rem" \
+    -d "custom_fields"="rem" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/companies/{company}",
     "method": "PUT",
+    "data": {
+        "name": "rem",
+        "description": "rem",
+        "address1": "rem",
+        "address2": "rem",
+        "city": "rem",
+        "state": "rem",
+        "zip": "rem",
+        "country": "rem",
+        "phone": "rem",
+        "fax": "rem",
+        "website": "rem",
+        "info": "rem",
+        "custom_fields": "rem"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -330,13 +494,119 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;put("http://saelos.test/api/v1/companies/{company}");</code></pre>
+$response = $client-&gt;put("http://saelos.test/api/v1/companies/{company}", [
+    RequestOptions::JSON =&gt; [
+        "name" =&gt; "rem",
+        "description" =&gt; "rem",
+        "address1" =&gt; "rem",
+        "address2" =&gt; "rem",
+        "city" =&gt; "rem",
+        "state" =&gt; "rem",
+        "zip" =&gt; "rem",
+        "country" =&gt; "rem",
+        "phone" =&gt; "rem",
+        "fax" =&gt; "rem",
+        "website" =&gt; "rem",
+        "info" =&gt; "rem",
+        "custom_fields" =&gt; "rem",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/companies/{company}</code></p>
 <p><code>PATCH api/v1/companies/{company}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>address1</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address2</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>city</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>zip</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>country</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>fax</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>website</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>info</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_af6a8ef6ec9748b875fe36d6256c40ed -->
 <!-- START_02c1ebf9f4df1c10bbf4748053f03c8e -->
 <h2>Delete a Company</h2>
@@ -718,17 +988,17 @@ $response = $client-&gt;get("http://saelos.test/api/v1/contacts/count");</code><
 <p><code>GET api/v1/contacts/count</code></p>
 <p><code>HEAD api/v1/contacts/count</code></p>
 <!-- END_416a4afc808e2fe5a932b916821dab61 -->
-<!-- START_b138f0bf0ceb7cebea6a8c6bc4d88770 -->
+<!-- START_06a0331f9a1fd47c792cdcf729f435be -->
 <h2>Initiate a call to a Contact.</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{id}/call" \
+<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{contact}/call" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://saelos.test/api/v1/contacts/{id}/call",
+    "url": "http://saelos.test/api/v1/contacts/{contact}/call",
     "method": "POST",
     "headers": {
         "accept": "application/json"
@@ -742,21 +1012,21 @@ $.ajax(settings).done(function (response) {
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/call");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{contact}/call");</code></pre>
 <h3>HTTP Request</h3>
-<p><code>POST api/v1/contacts/{id}/call</code></p>
-<!-- END_b138f0bf0ceb7cebea6a8c6bc4d88770 -->
-<!-- START_6a37f3bfbded9adb5fe86f7140c1c719 -->
+<p><code>POST api/v1/contacts/{contact}/call</code></p>
+<!-- END_06a0331f9a1fd47c792cdcf729f435be -->
+<!-- START_abb539c9fb1b287a42d74c645bfb451e -->
 <h2>Send an sms to a Contact.</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{id}/sms" \
+<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{contact}/sms" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://saelos.test/api/v1/contacts/{id}/sms",
+    "url": "http://saelos.test/api/v1/contacts/{contact}/sms",
     "method": "POST",
     "headers": {
         "accept": "application/json"
@@ -770,21 +1040,21 @@ $.ajax(settings).done(function (response) {
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/sms");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{contact}/sms");</code></pre>
 <h3>HTTP Request</h3>
-<p><code>POST api/v1/contacts/{id}/sms</code></p>
-<!-- END_6a37f3bfbded9adb5fe86f7140c1c719 -->
-<!-- START_c83aedb6f25b1d1451f1ab49498f66c6 -->
+<p><code>POST api/v1/contacts/{contact}/sms</code></p>
+<!-- END_abb539c9fb1b287a42d74c645bfb451e -->
+<!-- START_45b29de7e82e49898428bd14c51f368a -->
 <h2>Send an email to a Contact.</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{id}/email" \
+<pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/contacts/{contact}/email" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://saelos.test/api/v1/contacts/{id}/email",
+    "url": "http://saelos.test/api/v1/contacts/{contact}/email",
     "method": "POST",
     "headers": {
         "accept": "application/json"
@@ -798,10 +1068,10 @@ $.ajax(settings).done(function (response) {
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/email");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{contact}/email");</code></pre>
 <h3>HTTP Request</h3>
-<p><code>POST api/v1/contacts/{id}/email</code></p>
-<!-- END_c83aedb6f25b1d1451f1ab49498f66c6 -->
+<p><code>POST api/v1/contacts/{contact}/email</code></p>
+<!-- END_45b29de7e82e49898428bd14c51f368a -->
 <!-- START_6fa2906e9ce360ed0313ef6d7e27c771 -->
 <h2>Fetching a filtered Contact list.</h2>
 <blockquote>
@@ -1725,12 +1995,31 @@ $response = $client-&gt;get("http://saelos.test/api/v1/opportunities");</code></
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/opportunities" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "probability"="3211061" \
+    -d "amount"="3211061" \
+    -d "name"="qui" \
+    -d "summary"="qui" \
+    -d "expected_close"="2009-10-27" \
+    -d "actual_close"="2009-10-27" \
+    -d "last_viewed"="2009-10-27" \
+    -d "custom_fields"="qui" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/opportunities",
     "method": "POST",
+    "data": {
+        "probability": 3211061,
+        "amount": 3211061,
+        "name": "qui",
+        "summary": "qui",
+        "expected_close": "2009-10-27",
+        "actual_close": "2009-10-27",
+        "last_viewed": "2009-10-27",
+        "custom_fields": "qui"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1740,12 +2029,78 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/opportunities");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/opportunities", [
+    RequestOptions::JSON =&gt; [
+        "probability" =&gt; "3211061",
+        "amount" =&gt; "3211061",
+        "name" =&gt; "qui",
+        "summary" =&gt; "qui",
+        "expected_close" =&gt; "2009-10-27",
+        "actual_close" =&gt; "2009-10-27",
+        "last_viewed" =&gt; "2009-10-27",
+        "custom_fields" =&gt; "qui",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/opportunities</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>probability</td>
+<td>numeric</td>
+<td>required</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>numeric</td>
+<td>required</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>summary</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>expected_close</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>actual_close</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>last_viewed</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_4e47ad5f0c2219554dadfb51b2fdbedc -->
 <!-- START_d74249b9a67d626b51f1364fb14f3634 -->
 <h2>Fetch a single Opportunity</h2>
@@ -1788,12 +2143,31 @@ $response = $client-&gt;get("http://saelos.test/api/v1/opportunities/{opportunit
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://saelos.test/api/v1/opportunities/{opportunity}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "probability"="5138029" \
+    -d "amount"="5138029" \
+    -d "name"="placeat" \
+    -d "summary"="placeat" \
+    -d "expected_close"="2006-03-21" \
+    -d "actual_close"="2006-03-21" \
+    -d "last_viewed"="2006-03-21" \
+    -d "custom_fields"="placeat" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/opportunities/{opportunity}",
     "method": "PUT",
+    "data": {
+        "probability": 5138029,
+        "amount": 5138029,
+        "name": "placeat",
+        "summary": "placeat",
+        "expected_close": "2006-03-21",
+        "actual_close": "2006-03-21",
+        "last_viewed": "2006-03-21",
+        "custom_fields": "placeat"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1803,13 +2177,79 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;put("http://saelos.test/api/v1/opportunities/{opportunity}");</code></pre>
+$response = $client-&gt;put("http://saelos.test/api/v1/opportunities/{opportunity}", [
+    RequestOptions::JSON =&gt; [
+        "probability" =&gt; "5138029",
+        "amount" =&gt; "5138029",
+        "name" =&gt; "placeat",
+        "summary" =&gt; "placeat",
+        "expected_close" =&gt; "2006-03-21",
+        "actual_close" =&gt; "2006-03-21",
+        "last_viewed" =&gt; "2006-03-21",
+        "custom_fields" =&gt; "placeat",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/opportunities/{opportunity}</code></p>
 <p><code>PATCH api/v1/opportunities/{opportunity}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>probability</td>
+<td>numeric</td>
+<td>required</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>numeric</td>
+<td>required</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>summary</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>expected_close</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>actual_close</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>last_viewed</td>
+<td>date</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_a6354cf07a11e6b4c138a7144f3fc897 -->
 <!-- START_6d2057c58f2f256e101fe5a3250aa4f2 -->
 <h2>Delete an Opportunity</h2>
@@ -2857,17 +3297,17 @@ $response = $client-&gt;delete("http://saelos.test/api/v1/teams/{team}");</code>
 <!-- END_f6de42238cfe6bcbd84ba30779151c10 -->
 <h1>Users</h1>
 <p>Interact with Users</p>
-<!-- START_1d0d35454d27d82f519a144cfaa02ec0 -->
+<!-- START_ef6fb999df57ccfe32ce0f29d955e93f -->
 <h2>Get Quota Counts</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://saelos.test/api/v1/users/{id}/count" \
+<pre><code class="language-bash">curl -X GET "http://saelos.test/api/v1/users/{user}/count" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://saelos.test/api/v1/users/{id}/count",
+    "url": "http://saelos.test/api/v1/users/{user}/count",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -2881,7 +3321,7 @@ $.ajax(settings).done(function (response) {
 
 $client = new Client;
 
-$response = $client-&gt;get("http://saelos.test/api/v1/users/{id}/count");</code></pre>
+$response = $client-&gt;get("http://saelos.test/api/v1/users/{user}/count");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2889,9 +3329,9 @@ $response = $client-&gt;get("http://saelos.test/api/v1/users/{id}/count");</code
     "message": "Unauthenticated."
 }</code></pre>
 <h3>HTTP Request</h3>
-<p><code>GET api/v1/users/{id}/count</code></p>
-<p><code>HEAD api/v1/users/{id}/count</code></p>
-<!-- END_1d0d35454d27d82f519a144cfaa02ec0 -->
+<p><code>GET api/v1/users/{user}/count</code></p>
+<p><code>HEAD api/v1/users/{user}/count</code></p>
+<!-- END_ef6fb999df57ccfe32ce0f29d955e93f -->
 <!-- START_080f3ecebb7bcc2f93284b8f5ae1ac3b -->
 <h2>Fetching Users</h2>
 <blockquote>

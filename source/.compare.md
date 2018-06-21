@@ -664,7 +664,11 @@ $response = $client->get("http://saelos.test/api/v1/companies/{company}/notes");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/companies/{company}/notes" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="illo" \
+    -d "note_content"="illo" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -673,6 +677,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/companies/{company}/notes",
     "method": "POST",
+    "data": {
+        "note_name": "illo",
+        "note_content": "illo",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -685,16 +694,30 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/companies/{company}/notes");
+$response = $client->post("http://saelos.test/api/v1/companies/{company}/notes", [
+    RequestOptions::JSON => [
+        "note_name" => "illo",
+        "note_content" => "illo",
+        "private" => "1",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/companies/{company}/notes`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_dcf7bf4dd7c47174b8f03976319abd98 -->
 
@@ -755,7 +778,11 @@ $response = $client->get("http://saelos.test/api/v1/companies/{company}/notes/{n
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/companies/{company}/notes/{note}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="nihil" \
+    -d "note_content"="nihil" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -764,6 +791,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/companies/{company}/notes/{note}",
     "method": "PUT",
+    "data": {
+        "note_name": "nihil",
+        "note_content": "nihil",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -776,10 +808,17 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{note}");
+$response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{note}", [
+    RequestOptions::JSON => [
+        "note_name" => "nihil",
+        "note_content" => "nihil",
+        "private" => "1",
+    ]
+]);
 ```
 
 
@@ -788,6 +827,13 @@ $response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{n
 
 `PATCH api/v1/companies/{company}/notes/{note}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_1569784c415bdb17157aceb1f11d81f8 -->
 
@@ -890,7 +936,11 @@ $response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/contacts/{contact}/notes" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="quo" \
+    -d "note_content"="quo" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -899,6 +949,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/contacts/{contact}/notes",
     "method": "POST",
+    "data": {
+        "note_name": "quo",
+        "note_content": "quo",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -911,16 +966,30 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/contacts/{contact}/notes");
+$response = $client->post("http://saelos.test/api/v1/contacts/{contact}/notes", [
+    RequestOptions::JSON => [
+        "note_name" => "quo",
+        "note_content" => "quo",
+        "private" => "1",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/contacts/{contact}/notes`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_aee3825efb6dff99acdd68bf6c7d7f31 -->
 
@@ -981,7 +1050,11 @@ $response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes/{no
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/contacts/{contact}/notes/{note}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="necessitatibus" \
+    -d "note_content"="necessitatibus" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -990,6 +1063,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/contacts/{contact}/notes/{note}",
     "method": "PUT",
+    "data": {
+        "note_name": "necessitatibus",
+        "note_content": "necessitatibus",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1002,10 +1080,17 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");
+$response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{note}", [
+    RequestOptions::JSON => [
+        "note_name" => "necessitatibus",
+        "note_content" => "necessitatibus",
+        "private" => "1",
+    ]
+]);
 ```
 
 
@@ -1014,6 +1099,13 @@ $response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{no
 
 `PATCH api/v1/contacts/{contact}/notes/{note}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_60c7441b70ccc6ace8658a6d596ea64c -->
 
@@ -2024,9 +2116,9 @@ curl -X POST "http://saelos.test/api/v1/opportunities" \
     -d "amount"="3211061" \
     -d "name"="qui" \
     -d "summary"="qui" \
-    -d "expected_close"="2009-10-27" \
-    -d "actual_close"="2009-10-27" \
-    -d "last_viewed"="2009-10-27" \
+    -d "expected_close"="2009-10-28" \
+    -d "actual_close"="2009-10-28" \
+    -d "last_viewed"="2009-10-28" \
     -d "custom_fields"="qui" \
 
 ```
@@ -2042,9 +2134,9 @@ var settings = {
         "amount": 3211061,
         "name": "qui",
         "summary": "qui",
-        "expected_close": "2009-10-27",
-        "actual_close": "2009-10-27",
-        "last_viewed": "2009-10-27",
+        "expected_close": "2009-10-28",
+        "actual_close": "2009-10-28",
+        "last_viewed": "2009-10-28",
         "custom_fields": "qui"
 },
     "headers": {
@@ -2069,9 +2161,9 @@ $response = $client->post("http://saelos.test/api/v1/opportunities", [
         "amount" => "3211061",
         "name" => "qui",
         "summary" => "qui",
-        "expected_close" => "2009-10-27",
-        "actual_close" => "2009-10-27",
-        "last_viewed" => "2009-10-27",
+        "expected_close" => "2009-10-28",
+        "actual_close" => "2009-10-28",
+        "last_viewed" => "2009-10-28",
         "custom_fields" => "qui",
     ]
 ]);
@@ -2158,9 +2250,9 @@ curl -X PUT "http://saelos.test/api/v1/opportunities/{opportunity}" \
     -d "amount"="5138029" \
     -d "name"="placeat" \
     -d "summary"="placeat" \
-    -d "expected_close"="2006-03-21" \
-    -d "actual_close"="2006-03-21" \
-    -d "last_viewed"="2006-03-21" \
+    -d "expected_close"="2006-03-22" \
+    -d "actual_close"="2006-03-22" \
+    -d "last_viewed"="2006-03-22" \
     -d "custom_fields"="placeat" \
 
 ```
@@ -2176,9 +2268,9 @@ var settings = {
         "amount": 5138029,
         "name": "placeat",
         "summary": "placeat",
-        "expected_close": "2006-03-21",
-        "actual_close": "2006-03-21",
-        "last_viewed": "2006-03-21",
+        "expected_close": "2006-03-22",
+        "actual_close": "2006-03-22",
+        "last_viewed": "2006-03-22",
         "custom_fields": "placeat"
 },
     "headers": {
@@ -2203,9 +2295,9 @@ $response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}"
         "amount" => "5138029",
         "name" => "placeat",
         "summary" => "placeat",
-        "expected_close" => "2006-03-21",
-        "actual_close" => "2006-03-21",
-        "last_viewed" => "2006-03-21",
+        "expected_close" => "2006-03-22",
+        "actual_close" => "2006-03-22",
+        "last_viewed" => "2006-03-22",
         "custom_fields" => "placeat",
     ]
 ]);
@@ -2325,13 +2417,17 @@ $response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/
 <!-- END_a449f01c1ac73937ca8f2a0458b89e71 -->
 
 <!-- START_5c94ae37e9210e38b549d3f8c4a296ff -->
-## api/v1/opportunities/{opportunity}/notes
+## Save a new Opportunity note.
 
 > Example request:
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/opportunities/{opportunity}/notes" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="ut" \
+    -d "note_content"="ut" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -2340,6 +2436,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/opportunities/{opportunity}/notes",
     "method": "POST",
+    "data": {
+        "note_name": "ut",
+        "note_content": "ut",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -2352,16 +2453,30 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/opportunities/{opportunity}/notes");
+$response = $client->post("http://saelos.test/api/v1/opportunities/{opportunity}/notes", [
+    RequestOptions::JSON => [
+        "note_name" => "ut",
+        "note_content" => "ut",
+        "private" => "1",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/opportunities/{opportunity}/notes`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_5c94ae37e9210e38b549d3f8c4a296ff -->
 
@@ -2416,13 +2531,17 @@ $response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/
 <!-- END_1080df27a5df36e555c5fcd9b8258fdd -->
 
 <!-- START_b99894f177351245da6f44f490d7b37a -->
-## api/v1/opportunities/{opportunity}/notes/{note}
+## Update an existing Opportunity note.
 
 > Example request:
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "note_name"="quaerat" \
+    -d "note_content"="quaerat" \
+    -d "private"="1" \
+
 ```
 
 ```javascript
@@ -2431,6 +2550,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}",
     "method": "PUT",
+    "data": {
+        "note_name": "quaerat",
+        "note_content": "quaerat",
+        "private": true
+},
     "headers": {
         "accept": "application/json"
     }
@@ -2443,10 +2567,17 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");
+$response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}", [
+    RequestOptions::JSON => [
+        "note_name" => "quaerat",
+        "note_content" => "quaerat",
+        "private" => "1",
+    ]
+]);
 ```
 
 
@@ -2455,6 +2586,13 @@ $response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/
 
 `PATCH api/v1/opportunities/{opportunity}/notes/{note}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    note_name | string |  required  | Maximum: `255`
+    note_content | string |  required  | 
+    private | boolean |  optional  | 
 
 <!-- END_b99894f177351245da6f44f490d7b37a -->
 
@@ -2559,7 +2697,10 @@ $response = $client->get("http://saelos.test/api/v1/roles");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/roles" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="quae" \
+    -d "description"="quae" \
+
 ```
 
 ```javascript
@@ -2568,6 +2709,10 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/roles",
     "method": "POST",
+    "data": {
+        "name": "quae",
+        "description": "quae"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -2580,16 +2725,28 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/roles");
+$response = $client->post("http://saelos.test/api/v1/roles", [
+    RequestOptions::JSON => [
+        "name" => "quae",
+        "description" => "quae",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/roles`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  required  | 
 
 <!-- END_5f753b2bffb6b34b6136ddfe1be7bcce -->
 
@@ -2650,7 +2807,10 @@ $response = $client->get("http://saelos.test/api/v1/roles/{role}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/roles/{role}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="velit" \
+    -d "description"="velit" \
+
 ```
 
 ```javascript
@@ -2659,6 +2819,10 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/roles/{role}",
     "method": "PUT",
+    "data": {
+        "name": "velit",
+        "description": "velit"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -2671,10 +2835,16 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/roles/{role}");
+$response = $client->put("http://saelos.test/api/v1/roles/{role}", [
+    RequestOptions::JSON => [
+        "name" => "velit",
+        "description" => "velit",
+    ]
+]);
 ```
 
 
@@ -2683,6 +2853,12 @@ $response = $client->put("http://saelos.test/api/v1/roles/{role}");
 
 `PATCH api/v1/roles/{role}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  required  | 
 
 <!-- END_81ac9047f8db2b92092c5a7f13e5d28d -->
 
@@ -3561,7 +3737,11 @@ $response = $client->get("http://saelos.test/api/v1/teams");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/teams" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="sunt" \
+    -d "description"="sunt" \
+    -d "leader_id"="4" \
+
 ```
 
 ```javascript
@@ -3570,6 +3750,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/teams",
     "method": "POST",
+    "data": {
+        "name": "sunt",
+        "description": "sunt",
+        "leader_id": 4
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3582,16 +3767,30 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/teams");
+$response = $client->post("http://saelos.test/api/v1/teams", [
+    RequestOptions::JSON => [
+        "name" => "sunt",
+        "description" => "sunt",
+        "leader_id" => "4",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/teams`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  optional  | 
+    leader_id | numeric |  optional  | Valid user id
 
 <!-- END_9c2019f9d2d308844e1949dfa342b380 -->
 
@@ -3652,7 +3851,11 @@ $response = $client->get("http://saelos.test/api/v1/teams/{team}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/teams/{team}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="eos" \
+    -d "description"="eos" \
+    -d "leader_id"="15" \
+
 ```
 
 ```javascript
@@ -3661,6 +3864,11 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/teams/{team}",
     "method": "PUT",
+    "data": {
+        "name": "eos",
+        "description": "eos",
+        "leader_id": 15
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3673,10 +3881,17 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/teams/{team}");
+$response = $client->put("http://saelos.test/api/v1/teams/{team}", [
+    RequestOptions::JSON => [
+        "name" => "eos",
+        "description" => "eos",
+        "leader_id" => "15",
+    ]
+]);
 ```
 
 
@@ -3685,6 +3900,13 @@ $response = $client->put("http://saelos.test/api/v1/teams/{team}");
 
 `PATCH api/v1/teams/{team}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  optional  | 
+    leader_id | numeric |  optional  | Valid user id
 
 <!-- END_02dc0adeb714bc1c46bd3cde2c952827 -->
 

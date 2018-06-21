@@ -2597,7 +2597,7 @@ Parameter | Type | Status | Description
 <!-- END_b99894f177351245da6f44f490d7b37a -->
 
 <!-- START_7a3a4f810b6c3a54ec62cc8b277ae692 -->
-## api/v1/opportunities/{opportunity}/notes/{note}
+## Delete an Opportunity note.
 
 > Example request:
 
@@ -2983,6 +2983,19 @@ $response = $client->get("http://saelos.test/api/v1/stages/pipeline");
             "count": 0,
             "count_for_team": 0,
             "count_for_user": 0
+        },
+        {
+            "id": 4,
+            "created_at": "2018-06-21 20:58:28",
+            "updated_at": "2018-06-21 20:58:28",
+            "deleted_at": null,
+            "name": "asdf",
+            "probability": 63,
+            "active": 0,
+            "color": "#03a9f4",
+            "count": 0,
+            "count_for_team": 0,
+            "count_for_user": 0
         }
     ]
 }
@@ -3053,7 +3066,12 @@ $response = $client->get("http://saelos.test/api/v1/stages");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/stages" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="repellat" \
+    -d "probability"="100" \
+    -d "active"="1" \
+    -d "color"="repellat" \
+
 ```
 
 ```javascript
@@ -3062,6 +3080,12 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/stages",
     "method": "POST",
+    "data": {
+        "name": "repellat",
+        "probability": 100,
+        "active": true,
+        "color": "repellat"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3074,16 +3098,32 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/stages");
+$response = $client->post("http://saelos.test/api/v1/stages", [
+    RequestOptions::JSON => [
+        "name" => "repellat",
+        "probability" => "100",
+        "active" => "1",
+        "color" => "repellat",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/stages`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    probability | integer |  optional  | Between: `0` and `100`
+    active | boolean |  optional  | 
+    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
 
 <!-- END_2e6018981510d64025747fa68c443d41 -->
 
@@ -3144,7 +3184,12 @@ $response = $client->get("http://saelos.test/api/v1/stages/{stage}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/stages/{stage}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="nihil" \
+    -d "probability"="71" \
+    -d "active"="1" \
+    -d "color"="nihil" \
+
 ```
 
 ```javascript
@@ -3153,6 +3198,12 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/stages/{stage}",
     "method": "PUT",
+    "data": {
+        "name": "nihil",
+        "probability": 71,
+        "active": true,
+        "color": "nihil"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3165,10 +3216,18 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/stages/{stage}");
+$response = $client->put("http://saelos.test/api/v1/stages/{stage}", [
+    RequestOptions::JSON => [
+        "name" => "nihil",
+        "probability" => "71",
+        "active" => "1",
+        "color" => "nihil",
+    ]
+]);
 ```
 
 
@@ -3177,6 +3236,14 @@ $response = $client->put("http://saelos.test/api/v1/stages/{stage}");
 
 `PATCH api/v1/stages/{stage}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    probability | integer |  optional  | Between: `0` and `100`
+    active | boolean |  optional  | 
+    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
 
 <!-- END_f59010f3473811158a5bd76142767624 -->
 
@@ -3281,7 +3348,12 @@ $response = $client->get("http://saelos.test/api/v1/statuses");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/statuses" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="tempore" \
+    -d "published"="1" \
+    -d "color"="tempore" \
+    -d "ordering"="887473" \
+
 ```
 
 ```javascript
@@ -3290,6 +3362,12 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/statuses",
     "method": "POST",
+    "data": {
+        "name": "tempore",
+        "published": true,
+        "color": "tempore",
+        "ordering": 887473
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3302,16 +3380,32 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/statuses");
+$response = $client->post("http://saelos.test/api/v1/statuses", [
+    RequestOptions::JSON => [
+        "name" => "tempore",
+        "published" => "1",
+        "color" => "tempore",
+        "ordering" => "887473",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/statuses`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    published | boolean |  optional  | 
+    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    ordering | numeric |  optional  | 
 
 <!-- END_a7ada8c4f6e927f36d1b35bcad64309f -->
 
@@ -3372,7 +3466,12 @@ $response = $client->get("http://saelos.test/api/v1/statuses/{status}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/statuses/{status}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="placeat" \
+    -d "published"="1" \
+    -d "color"="placeat" \
+    -d "ordering"="3085410" \
+
 ```
 
 ```javascript
@@ -3381,6 +3480,12 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/statuses/{status}",
     "method": "PUT",
+    "data": {
+        "name": "placeat",
+        "published": true,
+        "color": "placeat",
+        "ordering": 3085410
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3393,10 +3498,18 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/statuses/{status}");
+$response = $client->put("http://saelos.test/api/v1/statuses/{status}", [
+    RequestOptions::JSON => [
+        "name" => "placeat",
+        "published" => "1",
+        "color" => "placeat",
+        "ordering" => "3085410",
+    ]
+]);
 ```
 
 
@@ -3405,6 +3518,14 @@ $response = $client->put("http://saelos.test/api/v1/statuses/{status}");
 
 `PATCH api/v1/statuses/{status}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    published | boolean |  optional  | 
+    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    ordering | numeric |  optional  | 
 
 <!-- END_0898bd606cefca670cfa33547d02e52d -->
 

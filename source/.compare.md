@@ -11,13 +11,14 @@ includes:
 search: true
 
 toc_footers:
-- <a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
+- <a href="https://github.com/saelos/saelos">Download Saelos source code</a>
+- <a href='https://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
 ---
 <!-- START_INFO -->
 # Info
 
 Welcome to the Saelos API reference.
-[Get Postman Collection](http://saelos.test/docs/collection.json)
+[Get Postman Collection](http://saelos.test/Users/dgilbert/Sites/saelos-documentation/collection.json)
 
 <!-- END_INFO -->
 
@@ -57,7 +58,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -138,7 +141,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -261,7 +266,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -342,7 +349,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -463,7 +472,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -544,7 +555,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -665,7 +678,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -746,7 +761,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -873,7 +890,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1028,7 +1047,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1046,7 +1067,24 @@ null
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/contacts" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "first_name"="temporibus" \
+    -d "last_name"="temporibus" \
+    -d "email"="qconn@example.com" \
+    -d "address1"="temporibus" \
+    -d "address2"="temporibus" \
+    -d "city"="temporibus" \
+    -d "state"="temporibus" \
+    -d "zip"="temporibus" \
+    -d "country"="temporibus" \
+    -d "phone"="temporibus" \
+    -d "fax"="temporibus" \
+    -d "website"="http://conn.biz/consequatur-odit-esse-temporibus" \
+    -d "info"="temporibus" \
+    -d "dons_custom_Field"="temporibus" \
+    -d "another_custom"="temporibus" \
+    -d "custom_fields"="temporibus" \
+
 ```
 
 ```javascript
@@ -1055,6 +1093,24 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/contacts",
     "method": "POST",
+    "data": {
+        "first_name": "temporibus",
+        "last_name": "temporibus",
+        "email": "qconn@example.com",
+        "address1": "temporibus",
+        "address2": "temporibus",
+        "city": "temporibus",
+        "state": "temporibus",
+        "zip": "temporibus",
+        "country": "temporibus",
+        "phone": "temporibus",
+        "fax": "temporibus",
+        "website": "http:\/\/conn.biz\/consequatur-odit-esse-temporibus",
+        "info": "temporibus",
+        "dons_custom_Field": "temporibus",
+        "another_custom": "temporibus",
+        "custom_fields": "temporibus"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1073,6 +1129,26 @@ PHP STUFF WITH GUZZLE
 ### HTTP Request
 `POST api/v1/contacts`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    first_name | string |  optional  | Maximum: `255`
+    last_name | string |  optional  | Maximum: `255`
+    email | email |  required  | Maximum: `255`
+    address1 | string |  optional  | Maximum: `255`
+    address2 | string |  optional  | Maximum: `255`
+    city | string |  optional  | Maximum: `255`
+    state | string |  optional  | Maximum: `255`
+    zip | string |  optional  | Maximum: `255`
+    country | string |  optional  | Maximum: `255`
+    phone | string |  optional  | Maximum: `255`
+    fax | string |  optional  | Maximum: `255`
+    website | url |  optional  | Maximum: `255`
+    info | string |  optional  | 
+    dons_custom_Field | string |  required  | Maximum: `255`
+    another_custom | string |  required  | Maximum: `255`
+    custom_fields | string |  optional  | 
 
 <!-- END_47c2efeaf62c42ca6aab8e676b494b40 -->
 
@@ -1109,7 +1185,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1127,7 +1205,24 @@ null
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/contacts/{contact}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "first_name"="aut" \
+    -d "last_name"="aut" \
+    -d "email"="qreichert@example.com" \
+    -d "address1"="aut" \
+    -d "address2"="aut" \
+    -d "city"="aut" \
+    -d "state"="aut" \
+    -d "zip"="aut" \
+    -d "country"="aut" \
+    -d "phone"="aut" \
+    -d "fax"="aut" \
+    -d "website"="https://reichert.biz/deserunt-non-et-illo-assumenda.html" \
+    -d "info"="aut" \
+    -d "dons_custom_Field"="aut" \
+    -d "another_custom"="aut" \
+    -d "custom_fields"="aut" \
+
 ```
 
 ```javascript
@@ -1136,6 +1231,24 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/contacts/{contact}",
     "method": "PUT",
+    "data": {
+        "first_name": "aut",
+        "last_name": "aut",
+        "email": "qreichert@example.com",
+        "address1": "aut",
+        "address2": "aut",
+        "city": "aut",
+        "state": "aut",
+        "zip": "aut",
+        "country": "aut",
+        "phone": "aut",
+        "fax": "aut",
+        "website": "https:\/\/reichert.biz\/deserunt-non-et-illo-assumenda.html",
+        "info": "aut",
+        "dons_custom_Field": "aut",
+        "another_custom": "aut",
+        "custom_fields": "aut"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1156,6 +1269,26 @@ PHP STUFF WITH GUZZLE
 
 `PATCH api/v1/contacts/{contact}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    first_name | string |  optional  | Maximum: `255`
+    last_name | string |  optional  | Maximum: `255`
+    email | email |  required  | Maximum: `255`
+    address1 | string |  optional  | Maximum: `255`
+    address2 | string |  optional  | Maximum: `255`
+    city | string |  optional  | Maximum: `255`
+    state | string |  optional  | Maximum: `255`
+    zip | string |  optional  | Maximum: `255`
+    country | string |  optional  | Maximum: `255`
+    phone | string |  optional  | Maximum: `255`
+    fax | string |  optional  | Maximum: `255`
+    website | url |  optional  | Maximum: `255`
+    info | string |  optional  | 
+    dons_custom_Field | string |  required  | Maximum: `255`
+    another_custom | string |  required  | Maximum: `255`
+    custom_fields | string |  optional  | 
 
 <!-- END_9aec7381d4dd89e68a9ff728678d8b21 -->
 
@@ -1232,7 +1365,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1250,7 +1385,22 @@ null
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/fields" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "label"="tempore" \
+    -d "alias"="tempore" \
+    -d "model"="App\Opportunity" \
+    -d "group"="tempore" \
+    -d "type"="date" \
+    -d "entity_class"="App\Team" \
+    -d "default"="tempore" \
+    -d "values"="tempore" \
+    -d "required"="1" \
+    -d "protected"="1" \
+    -d "hidden"="1" \
+    -d "searchable"="1" \
+    -d "summary"="tempore" \
+    -d "ordering"="6014378" \
+
 ```
 
 ```javascript
@@ -1259,6 +1409,22 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/fields",
     "method": "POST",
+    "data": {
+        "label": "tempore",
+        "alias": "tempore",
+        "model": "App\\Opportunity",
+        "group": "tempore",
+        "type": "date",
+        "entity_class": "App\\Team",
+        "default": "tempore",
+        "values": "tempore",
+        "required": true,
+        "protected": true,
+        "hidden": true,
+        "searchable": true,
+        "summary": "tempore",
+        "ordering": 6014378
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1277,6 +1443,24 @@ PHP STUFF WITH GUZZLE
 ### HTTP Request
 `POST api/v1/fields`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    label | string |  required  | Maximum: `255`
+    alias | string |  optional  | Maximum: `255`
+    model | string |  required  | `App\Contact`, `App\Company`, `App\Opportunity` or `App\User`
+    group | string |  required  | Maximum: `255`
+    type | string |  required  | `text`, `textarea`, `radio`, `checkbox`, `select`, `lookup`, `picklist`, `number`, `date`, `email`, `url` or `entity`
+    entity_class | string |  optional  | Required if `type` is `entity` `App\Contact`, `App\Company`, `App\Opportunity`, `App\User`, `App\Tag`, `App\Team`, `App\Status` or `App\Stage`
+    default | string |  optional  | Maximum: `255`
+    values | string |  optional  | Required if `type` is `picklist` Required if `type` is `select`
+    required | boolean |  required  | 
+    protected | boolean |  optional  | 
+    hidden | boolean |  required  | 
+    searchable | boolean |  required  | 
+    summary | string |  optional  | 
+    ordering | numeric |  required  | 
 
 <!-- END_dc97eb3c36c4ca194360e61af62c5486 -->
 
@@ -1313,7 +1497,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1331,7 +1517,22 @@ null
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/fields/{field}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "label"="laudantium" \
+    -d "alias"="laudantium" \
+    -d "model"="App\Company" \
+    -d "group"="laudantium" \
+    -d "type"="lookup" \
+    -d "entity_class"="App\User" \
+    -d "default"="laudantium" \
+    -d "values"="laudantium" \
+    -d "required"="1" \
+    -d "protected"="1" \
+    -d "hidden"="1" \
+    -d "searchable"="1" \
+    -d "summary"="laudantium" \
+    -d "ordering"="43843" \
+
 ```
 
 ```javascript
@@ -1340,6 +1541,22 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/fields/{field}",
     "method": "PUT",
+    "data": {
+        "label": "laudantium",
+        "alias": "laudantium",
+        "model": "App\\Company",
+        "group": "laudantium",
+        "type": "lookup",
+        "entity_class": "App\\User",
+        "default": "laudantium",
+        "values": "laudantium",
+        "required": true,
+        "protected": true,
+        "hidden": true,
+        "searchable": true,
+        "summary": "laudantium",
+        "ordering": 43843
+},
     "headers": {
         "accept": "application/json"
     }
@@ -1360,6 +1577,24 @@ PHP STUFF WITH GUZZLE
 
 `PATCH api/v1/fields/{field}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    label | string |  required  | Maximum: `255`
+    alias | string |  optional  | Maximum: `255`
+    model | string |  required  | `App\Contact`, `App\Company`, `App\Opportunity` or `App\User`
+    group | string |  required  | Maximum: `255`
+    type | string |  required  | `text`, `textarea`, `radio`, `checkbox`, `select`, `lookup`, `picklist`, `number`, `date`, `email`, `url` or `entity`
+    entity_class | string |  optional  | Required if `type` is `entity` `App\Contact`, `App\Company`, `App\Opportunity`, `App\User`, `App\Tag`, `App\Team`, `App\Status` or `App\Stage`
+    default | string |  optional  | Maximum: `255`
+    values | string |  optional  | Required if `type` is `picklist` Required if `type` is `select`
+    required | boolean |  required  | 
+    protected | boolean |  optional  | 
+    hidden | boolean |  required  | 
+    searchable | boolean |  required  | 
+    summary | string |  optional  | 
+    ordering | numeric |  required  | 
 
 <!-- END_98936d3b61a34154ee5cb19b06a8324b -->
 
@@ -1436,7 +1671,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1517,7 +1754,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1638,7 +1877,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1719,7 +1960,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1842,7 +2085,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -1923,7 +2168,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2046,7 +2293,49 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "data": [
+        {
+            "id": 1,
+            "created_at": "2018-06-13 15:42:08",
+            "updated_at": "2018-06-13 15:42:08",
+            "deleted_at": null,
+            "name": "Lost",
+            "probability": 0,
+            "active": 0,
+            "color": "#607d8b",
+            "count": 0,
+            "count_for_team": 0,
+            "count_for_user": 0
+        },
+        {
+            "id": 2,
+            "created_at": "2018-06-13 15:42:08",
+            "updated_at": "2018-06-13 15:42:08",
+            "deleted_at": null,
+            "name": "Open",
+            "probability": 50,
+            "active": 1,
+            "color": "#2196f3",
+            "count": 0,
+            "count_for_team": 0,
+            "count_for_user": 0
+        },
+        {
+            "id": 3,
+            "created_at": "2018-06-13 15:42:08",
+            "updated_at": "2018-06-13 15:42:08",
+            "deleted_at": null,
+            "name": "Won",
+            "probability": 100,
+            "active": 0,
+            "color": "#4caf50",
+            "count": 0,
+            "count_for_team": 0,
+            "count_for_user": 0
+        }
+    ]
+}
 ```
 
 ### HTTP Request
@@ -2090,7 +2379,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2171,7 +2462,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2294,7 +2587,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2375,7 +2670,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2498,7 +2795,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2579,7 +2878,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2702,7 +3003,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2783,7 +3086,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2906,7 +3211,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -2950,7 +3257,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request
@@ -3031,7 +3340,9 @@ PHP STUFF WITH GUZZLE
 > Example response:
 
 ```json
-null
+{
+    "message": "Unauthenticated."
+}
 ```
 
 ### HTTP Request

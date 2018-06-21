@@ -52,7 +52,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/activities");
 ```
 
 > Example response:
@@ -98,7 +102,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/activities");
 ```
 
 
@@ -135,7 +143,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/activities/{activity}");
 ```
 
 > Example response:
@@ -181,7 +193,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/activities/{activity}");
 ```
 
 
@@ -220,7 +236,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/activities/{activity}");
 ```
 
 
@@ -260,7 +280,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/companies");
 ```
 
 > Example response:
@@ -306,7 +330,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/companies");
 ```
 
 
@@ -343,7 +371,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/companies/{company}");
 ```
 
 > Example response:
@@ -389,7 +421,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/companies/{company}");
 ```
 
 
@@ -428,7 +464,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/companies/{company}");
 ```
 
 
@@ -466,7 +506,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/companies/{company}/notes");
 ```
 
 > Example response:
@@ -512,7 +556,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/companies/{company}/notes");
 ```
 
 
@@ -549,7 +597,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/companies/{company}/notes/{note}");
 ```
 
 > Example response:
@@ -595,7 +647,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{note}");
 ```
 
 
@@ -634,7 +690,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/companies/{company}/notes/{note}");
 ```
 
 
@@ -672,7 +732,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes");
 ```
 
 > Example response:
@@ -718,7 +782,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/contacts/{contact}/notes");
 ```
 
 
@@ -755,7 +823,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");
 ```
 
 > Example response:
@@ -801,7 +873,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");
 ```
 
 
@@ -840,7 +916,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");
 ```
 
 
@@ -884,7 +964,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/contacts/count");
 ```
 
 > Example response:
@@ -930,7 +1014,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/contacts/{id}/call");
 ```
 
 
@@ -967,7 +1055,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/contacts/{id}/sms");
 ```
 
 
@@ -1004,7 +1096,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/contacts/{id}/email");
 ```
 
 
@@ -1041,7 +1137,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/contacts");
 ```
 
 > Example response:
@@ -1118,7 +1218,29 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/contacts", [
+    RequestOptions::JSON => [
+        "first_name" => "temporibus",
+        "last_name" => "temporibus",
+        "email" => "qconn@example.com",
+        "address1" => "temporibus",
+        "address2" => "temporibus",
+        "city" => "temporibus",
+        "state" => "temporibus",
+        "zip" => "temporibus",
+        "country" => "temporibus",
+        "phone" => "temporibus",
+        "fax" => "temporibus",
+        "website" => "http://conn.biz/consequatur-odit-esse-temporibus",
+        "info" => "temporibus",
+        "custom_fields" => "temporibus",
+    ]
+]);
 ```
 
 
@@ -1173,7 +1295,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/contacts/{contact}");
 ```
 
 > Example response:
@@ -1250,7 +1376,29 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/contacts/{contact}", [
+    RequestOptions::JSON => [
+        "first_name" => "aut",
+        "last_name" => "aut",
+        "email" => "qreichert@example.com",
+        "address1" => "aut",
+        "address2" => "aut",
+        "city" => "aut",
+        "state" => "aut",
+        "zip" => "aut",
+        "country" => "aut",
+        "phone" => "aut",
+        "fax" => "aut",
+        "website" => "https://reichert.biz/deserunt-non-et-illo-assumenda.html",
+        "info" => "aut",
+        "custom_fields" => "aut",
+    ]
+]);
 ```
 
 
@@ -1307,7 +1455,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/contacts/{contact}");
 ```
 
 
@@ -1347,7 +1499,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/fields");
 ```
 
 > Example response:
@@ -1424,7 +1580,29 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/fields", [
+    RequestOptions::JSON => [
+        "label" => "tempore",
+        "alias" => "tempore",
+        "model" => "App\Opportunity",
+        "group" => "tempore",
+        "type" => "date",
+        "entity_class" => "App\Team",
+        "default" => "tempore",
+        "values" => "tempore",
+        "required" => "1",
+        "protected" => "1",
+        "hidden" => "1",
+        "searchable" => "1",
+        "summary" => "tempore",
+        "ordering" => "6014378",
+    ]
+]);
 ```
 
 
@@ -1448,7 +1626,7 @@ Parameter | Type | Status | Description
     hidden | boolean |  required  | 
     searchable | boolean |  required  | 
     summary | string |  optional  | 
-    ordering | numeric |  required  | 
+    ordering | integer |  required  | 
 
 <!-- END_dc97eb3c36c4ca194360e61af62c5486 -->
 
@@ -1479,7 +1657,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/fields/{field}");
 ```
 
 > Example response:
@@ -1556,7 +1738,29 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/fields/{field}", [
+    RequestOptions::JSON => [
+        "label" => "laudantium",
+        "alias" => "laudantium",
+        "model" => "App\Company",
+        "group" => "laudantium",
+        "type" => "lookup",
+        "entity_class" => "App\User",
+        "default" => "laudantium",
+        "values" => "laudantium",
+        "required" => "1",
+        "protected" => "1",
+        "hidden" => "1",
+        "searchable" => "1",
+        "summary" => "laudantium",
+        "ordering" => "43843",
+    ]
+]);
 ```
 
 
@@ -1582,7 +1786,7 @@ Parameter | Type | Status | Description
     hidden | boolean |  required  | 
     searchable | boolean |  required  | 
     summary | string |  optional  | 
-    ordering | numeric |  required  | 
+    ordering | integer |  required  | 
 
 <!-- END_98936d3b61a34154ee5cb19b06a8324b -->
 
@@ -1613,7 +1817,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/fields/{field}");
 ```
 
 
@@ -1653,7 +1861,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/opportunities");
 ```
 
 > Example response:
@@ -1699,7 +1911,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/opportunities");
 ```
 
 
@@ -1736,7 +1952,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}");
 ```
 
 > Example response:
@@ -1782,7 +2002,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}");
 ```
 
 
@@ -1821,7 +2045,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/opportunities/{opportunity}");
 ```
 
 
@@ -1859,7 +2087,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/notes");
 ```
 
 > Example response:
@@ -1905,7 +2137,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/opportunities/{opportunity}/notes");
 ```
 
 
@@ -1942,7 +2178,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");
 ```
 
 > Example response:
@@ -1988,7 +2228,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");
 ```
 
 
@@ -2027,7 +2271,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");
 ```
 
 
@@ -2067,7 +2315,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/roles");
 ```
 
 > Example response:
@@ -2113,7 +2365,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/roles");
 ```
 
 
@@ -2150,7 +2406,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/roles/{role}");
 ```
 
 > Example response:
@@ -2196,7 +2456,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/roles/{role}");
 ```
 
 
@@ -2235,7 +2499,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/roles/{role}");
 ```
 
 
@@ -2275,7 +2543,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/stages/pipeline");
 ```
 
 > Example response:
@@ -2361,7 +2633,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/stages");
 ```
 
 > Example response:
@@ -2407,7 +2683,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/stages");
 ```
 
 
@@ -2444,7 +2724,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/stages/{stage}");
 ```
 
 > Example response:
@@ -2490,7 +2774,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/stages/{stage}");
 ```
 
 
@@ -2529,7 +2817,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/stages/{stage}");
 ```
 
 
@@ -2569,7 +2861,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/statuses");
 ```
 
 > Example response:
@@ -2615,7 +2911,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/statuses");
 ```
 
 
@@ -2652,7 +2952,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/statuses/{status}");
 ```
 
 > Example response:
@@ -2698,7 +3002,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/statuses/{status}");
 ```
 
 
@@ -2737,7 +3045,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/statuses/{status}");
 ```
 
 
@@ -2777,7 +3089,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/tags");
 ```
 
 > Example response:
@@ -2823,7 +3139,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/tags");
 ```
 
 
@@ -2860,7 +3180,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/tags/{tag}");
 ```
 
 > Example response:
@@ -2906,7 +3230,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/tags/{tag}");
 ```
 
 
@@ -2945,7 +3273,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/tags/{tag}");
 ```
 
 
@@ -2985,7 +3317,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/teams");
 ```
 
 > Example response:
@@ -3031,7 +3367,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/teams");
 ```
 
 
@@ -3068,7 +3408,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/teams/{team}");
 ```
 
 > Example response:
@@ -3114,7 +3458,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/teams/{team}");
 ```
 
 
@@ -3153,7 +3501,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/teams/{team}");
 ```
 
 
@@ -3193,7 +3545,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/users/{id}/count");
 ```
 
 > Example response:
@@ -3239,7 +3595,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/users");
 ```
 
 > Example response:
@@ -3285,7 +3645,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->post("http://saelos.test/api/v1/users");
 ```
 
 
@@ -3322,7 +3686,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->get("http://saelos.test/api/v1/users/{user}");
 ```
 
 > Example response:
@@ -3368,7 +3736,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->put("http://saelos.test/api/v1/users/{user}");
 ```
 
 
@@ -3407,7 +3779,11 @@ $.ajax(settings).done(function (response) {
 ```
 
 ```php
-PHP STUFF WITH GUZZLE
+use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client->delete("http://saelos.test/api/v1/users/{user}");
 ```
 
 

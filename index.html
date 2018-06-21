@@ -72,7 +72,11 @@
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/activities");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -103,7 +107,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/activities");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/activities</code></p>
 <!-- END_33aef576e6d971e2ba91dd3d8403d390 -->
@@ -127,7 +135,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/activities/{activity}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -158,7 +170,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/activities/{activity}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/activities/{activity}</code></p>
 <p><code>PATCH api/v1/activities/{activity}</code></p>
@@ -183,7 +199,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/activities/{activity}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/activities/{activity}</code></p>
 <!-- END_a428814a3c351226a73456c3b41d2a39 -->
@@ -209,7 +229,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/companies");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -240,7 +264,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/companies");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/companies</code></p>
 <!-- END_7be8cb2d15a57d2062ece90d5b8f8269 -->
@@ -264,7 +292,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/companies/{company}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -295,7 +327,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/companies/{company}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/companies/{company}</code></p>
 <p><code>PATCH api/v1/companies/{company}</code></p>
@@ -320,7 +356,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/companies/{company}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/companies/{company}</code></p>
 <!-- END_02c1ebf9f4df1c10bbf4748053f03c8e -->
@@ -345,7 +385,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/companies/{company}/notes");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -376,7 +420,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/companies/{company}/notes");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/companies/{company}/notes</code></p>
 <!-- END_dcf7bf4dd7c47174b8f03976319abd98 -->
@@ -400,7 +448,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/companies/{company}/notes/{note}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -431,7 +483,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/companies/{company}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/companies/{company}/notes/{note}</code></p>
 <p><code>PATCH api/v1/companies/{company}/notes/{note}</code></p>
@@ -456,7 +512,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/companies/{company}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/companies/{company}/notes/{note}</code></p>
 <!-- END_5aff5e655fe287896990d80c7dc2bccf -->
@@ -481,7 +541,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/contacts/{contact}/notes");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -512,7 +576,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{contact}/notes");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/contacts/{contact}/notes</code></p>
 <!-- END_aee3825efb6dff99acdd68bf6c7d7f31 -->
@@ -536,7 +604,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -567,7 +639,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/contacts/{contact}/notes/{note}</code></p>
 <p><code>PATCH api/v1/contacts/{contact}/notes/{note}</code></p>
@@ -592,7 +668,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/contacts/{contact}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/contacts/{contact}/notes/{note}</code></p>
 <!-- END_cb6c94a5520f391985f7a64895ea1e50 -->
@@ -621,7 +701,11 @@ request parameter.</p>
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/contacts/count");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -652,7 +736,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/call");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/contacts/{id}/call</code></p>
 <!-- END_b138f0bf0ceb7cebea6a8c6bc4d88770 -->
@@ -676,7 +764,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/sms");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/contacts/{id}/sms</code></p>
 <!-- END_6a37f3bfbded9adb5fe86f7140c1c719 -->
@@ -700,7 +792,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts/{id}/email");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/contacts/{id}/email</code></p>
 <!-- END_c83aedb6f25b1d1451f1ab49498f66c6 -->
@@ -724,7 +820,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/contacts");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -786,7 +886,29 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/contacts", [
+    RequestOptions::JSON =&gt; [
+        "first_name" =&gt; "temporibus",
+        "last_name" =&gt; "temporibus",
+        "email" =&gt; "qconn@example.com",
+        "address1" =&gt; "temporibus",
+        "address2" =&gt; "temporibus",
+        "city" =&gt; "temporibus",
+        "state" =&gt; "temporibus",
+        "zip" =&gt; "temporibus",
+        "country" =&gt; "temporibus",
+        "phone" =&gt; "temporibus",
+        "fax" =&gt; "temporibus",
+        "website" =&gt; "http://conn.biz/consequatur-odit-esse-temporibus",
+        "info" =&gt; "temporibus",
+        "custom_fields" =&gt; "temporibus",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/contacts</code></p>
 <h4>Parameters</h4>
@@ -905,7 +1027,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/contacts/{contact}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -967,7 +1093,29 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/contacts/{contact}", [
+    RequestOptions::JSON =&gt; [
+        "first_name" =&gt; "aut",
+        "last_name" =&gt; "aut",
+        "email" =&gt; "qreichert@example.com",
+        "address1" =&gt; "aut",
+        "address2" =&gt; "aut",
+        "city" =&gt; "aut",
+        "state" =&gt; "aut",
+        "zip" =&gt; "aut",
+        "country" =&gt; "aut",
+        "phone" =&gt; "aut",
+        "fax" =&gt; "aut",
+        "website" =&gt; "https://reichert.biz/deserunt-non-et-illo-assumenda.html",
+        "info" =&gt; "aut",
+        "custom_fields" =&gt; "aut",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/contacts/{contact}</code></p>
 <p><code>PATCH api/v1/contacts/{contact}</code></p>
@@ -1087,7 +1235,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/contacts/{contact}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/contacts/{contact}</code></p>
 <!-- END_6edc54ea34dd384c52c2ab85854ca8a2 -->
@@ -1113,7 +1265,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/fields");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1175,7 +1331,29 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/fields", [
+    RequestOptions::JSON =&gt; [
+        "label" =&gt; "tempore",
+        "alias" =&gt; "tempore",
+        "model" =&gt; "App\Opportunity",
+        "group" =&gt; "tempore",
+        "type" =&gt; "date",
+        "entity_class" =&gt; "App\Team",
+        "default" =&gt; "tempore",
+        "values" =&gt; "tempore",
+        "required" =&gt; "1",
+        "protected" =&gt; "1",
+        "hidden" =&gt; "1",
+        "searchable" =&gt; "1",
+        "summary" =&gt; "tempore",
+        "ordering" =&gt; "6014378",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/fields</code></p>
 <h4>Parameters</h4>
@@ -1264,7 +1442,7 @@ $.ajax(settings).done(function (response) {
 </tr>
 <tr>
 <td>ordering</td>
-<td>numeric</td>
+<td>integer</td>
 <td>required</td>
 </tr>
 </tbody>
@@ -1290,7 +1468,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/fields/{field}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1352,7 +1534,29 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/fields/{field}", [
+    RequestOptions::JSON =&gt; [
+        "label" =&gt; "laudantium",
+        "alias" =&gt; "laudantium",
+        "model" =&gt; "App\Company",
+        "group" =&gt; "laudantium",
+        "type" =&gt; "lookup",
+        "entity_class" =&gt; "App\User",
+        "default" =&gt; "laudantium",
+        "values" =&gt; "laudantium",
+        "required" =&gt; "1",
+        "protected" =&gt; "1",
+        "hidden" =&gt; "1",
+        "searchable" =&gt; "1",
+        "summary" =&gt; "laudantium",
+        "ordering" =&gt; "43843",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/fields/{field}</code></p>
 <p><code>PATCH api/v1/fields/{field}</code></p>
@@ -1442,7 +1646,7 @@ $.ajax(settings).done(function (response) {
 </tr>
 <tr>
 <td>ordering</td>
-<td>numeric</td>
+<td>integer</td>
 <td>required</td>
 </tr>
 </tbody>
@@ -1468,7 +1672,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/fields/{field}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/fields/{field}</code></p>
 <!-- END_9f7c65d9807532feeefaf0dd3ecf1015 -->
@@ -1494,7 +1702,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/opportunities");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1525,7 +1737,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/opportunities");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/opportunities</code></p>
 <!-- END_4e47ad5f0c2219554dadfb51b2fdbedc -->
@@ -1549,7 +1765,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/opportunities/{opportunity}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1580,7 +1800,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/opportunities/{opportunity}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/opportunities/{opportunity}</code></p>
 <p><code>PATCH api/v1/opportunities/{opportunity}</code></p>
@@ -1605,7 +1829,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/opportunities/{opportunity}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/opportunities/{opportunity}</code></p>
 <!-- END_6d2057c58f2f256e101fe5a3250aa4f2 -->
@@ -1630,7 +1858,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/opportunities/{opportunity}/notes");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1661,7 +1893,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/opportunities/{opportunity}/notes");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/opportunities/{opportunity}/notes</code></p>
 <!-- END_5c94ae37e9210e38b549d3f8c4a296ff -->
@@ -1685,7 +1921,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1716,7 +1956,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/opportunities/{opportunity}/notes/{note}</code></p>
 <p><code>PATCH api/v1/opportunities/{opportunity}/notes/{note}</code></p>
@@ -1741,7 +1985,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/opportunities/{opportunity}/notes/{note}</code></p>
 <!-- END_7a3a4f810b6c3a54ec62cc8b277ae692 -->
@@ -1767,7 +2015,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/roles");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1798,7 +2050,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/roles");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/roles</code></p>
 <!-- END_5f753b2bffb6b34b6136ddfe1be7bcce -->
@@ -1822,7 +2078,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/roles/{role}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1853,7 +2113,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/roles/{role}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/roles/{role}</code></p>
 <p><code>PATCH api/v1/roles/{role}</code></p>
@@ -1878,7 +2142,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/roles/{role}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/roles/{role}</code></p>
 <!-- END_04c524fc2f0ea8c793406426144b4c71 -->
@@ -1904,7 +2172,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/stages/pipeline");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -1975,7 +2247,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/stages");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2006,7 +2282,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/stages");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/stages</code></p>
 <!-- END_2e6018981510d64025747fa68c443d41 -->
@@ -2030,7 +2310,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/stages/{stage}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2061,7 +2345,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/stages/{stage}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/stages/{stage}</code></p>
 <p><code>PATCH api/v1/stages/{stage}</code></p>
@@ -2086,7 +2374,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/stages/{stage}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/stages/{stage}</code></p>
 <!-- END_86be1758a93a65b83dd8bec793d8eb3a -->
@@ -2112,7 +2404,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/statuses");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2143,7 +2439,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/statuses");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/statuses</code></p>
 <!-- END_a7ada8c4f6e927f36d1b35bcad64309f -->
@@ -2167,7 +2467,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/statuses/{status}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2198,7 +2502,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/statuses/{status}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/statuses/{status}</code></p>
 <p><code>PATCH api/v1/statuses/{status}</code></p>
@@ -2223,7 +2531,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/statuses/{status}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/statuses/{status}</code></p>
 <!-- END_2d91e3a86a0ac5ddfd01b6ca66016715 -->
@@ -2249,7 +2561,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/tags");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2280,7 +2596,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/tags");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/tags</code></p>
 <!-- END_630f8bae9314aa07bc76748bf619eb33 -->
@@ -2304,7 +2624,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/tags/{tag}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2335,7 +2659,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/tags/{tag}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/tags/{tag}</code></p>
 <p><code>PATCH api/v1/tags/{tag}</code></p>
@@ -2360,7 +2688,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/tags/{tag}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/tags/{tag}</code></p>
 <!-- END_a5d0790b7aa15c5f66eac1ae30c9a136 -->
@@ -2386,7 +2718,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/teams");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2417,7 +2753,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/teams");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/teams</code></p>
 <!-- END_9c2019f9d2d308844e1949dfa342b380 -->
@@ -2441,7 +2781,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/teams/{team}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2472,7 +2816,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/teams/{team}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/teams/{team}</code></p>
 <p><code>PATCH api/v1/teams/{team}</code></p>
@@ -2497,7 +2845,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/teams/{team}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/teams/{team}</code></p>
 <!-- END_f6de42238cfe6bcbd84ba30779151c10 -->
@@ -2523,7 +2875,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/users/{id}/count");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2554,7 +2910,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/users");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2585,7 +2945,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;post("http://saelos.test/api/v1/users");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/users</code></p>
 <!-- END_4194ceb9a20b7f80b61d14d44df366b4 -->
@@ -2609,7 +2973,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;get("http://saelos.test/api/v1/users/{user}");</code></pre>
 <blockquote>
 <p>Example response:</p>
 </blockquote>
@@ -2640,7 +3008,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;put("http://saelos.test/api/v1/users/{user}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/users/{user}</code></p>
 <p><code>PATCH api/v1/users/{user}</code></p>
@@ -2665,7 +3037,11 @@ $.ajax(settings).done(function (response) {
 $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
-<pre><code class="language-php">PHP STUFF WITH GUZZLE</code></pre>
+<pre><code class="language-php">use GuzzleHttp\Client;
+
+$client = new Client;
+
+$response = $client-&gt;delete("http://saelos.test/api/v1/users/{user}");</code></pre>
 <h3>HTTP Request</h3>
 <p><code>DELETE api/v1/users/{user}</code></p>
 <!-- END_22354fc95c42d81a744eece68f5b9b9a -->

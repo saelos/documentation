@@ -1081,8 +1081,6 @@ curl -X POST "http://saelos.test/api/v1/contacts" \
     -d "fax"="temporibus" \
     -d "website"="http://conn.biz/consequatur-odit-esse-temporibus" \
     -d "info"="temporibus" \
-    -d "dons_custom_Field"="temporibus" \
-    -d "another_custom"="temporibus" \
     -d "custom_fields"="temporibus" \
 
 ```
@@ -1107,8 +1105,6 @@ var settings = {
         "fax": "temporibus",
         "website": "http:\/\/conn.biz\/consequatur-odit-esse-temporibus",
         "info": "temporibus",
-        "dons_custom_Field": "temporibus",
-        "another_custom": "temporibus",
         "custom_fields": "temporibus"
 },
     "headers": {
@@ -1146,9 +1142,7 @@ Parameter | Type | Status | Description
     fax | string |  optional  | Maximum: `255`
     website | url |  optional  | Maximum: `255`
     info | string |  optional  | 
-    dons_custom_Field | string |  required  | Maximum: `255`
-    another_custom | string |  required  | Maximum: `255`
-    custom_fields | string |  optional  | 
+    custom_fields | array |  optional  | 
 
 <!-- END_47c2efeaf62c42ca6aab8e676b494b40 -->
 
@@ -1219,8 +1213,6 @@ curl -X PUT "http://saelos.test/api/v1/contacts/{contact}" \
     -d "fax"="aut" \
     -d "website"="https://reichert.biz/deserunt-non-et-illo-assumenda.html" \
     -d "info"="aut" \
-    -d "dons_custom_Field"="aut" \
-    -d "another_custom"="aut" \
     -d "custom_fields"="aut" \
 
 ```
@@ -1245,8 +1237,6 @@ var settings = {
         "fax": "aut",
         "website": "https:\/\/reichert.biz\/deserunt-non-et-illo-assumenda.html",
         "info": "aut",
-        "dons_custom_Field": "aut",
-        "another_custom": "aut",
         "custom_fields": "aut"
 },
     "headers": {
@@ -1286,9 +1276,7 @@ Parameter | Type | Status | Description
     fax | string |  optional  | Maximum: `255`
     website | url |  optional  | Maximum: `255`
     info | string |  optional  | 
-    dons_custom_Field | string |  required  | Maximum: `255`
-    another_custom | string |  required  | Maximum: `255`
-    custom_fields | string |  optional  | 
+    custom_fields | array |  optional  | 
 
 <!-- END_9aec7381d4dd89e68a9ff728678d8b21 -->
 

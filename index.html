@@ -4400,12 +4400,33 @@ $response = $client-&gt;get("http://saelos.test/api/v1/users");</code></pre>
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST "http://saelos.test/api/v1/users" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "custom_fields"="eligendi" \
+    -d "name"="eligendi" \
+    -d "username"="eligendi" \
+    -d "email"="lenore05@example.org" \
+    -d "password"="eligendi" \
+    -d "second_password"="eligendi" \
+    -d "phone"="eligendi" \
+    -d "team_id"="eligendi" \
+    -d "settings"="eligendi" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/users",
     "method": "POST",
+    "data": {
+        "custom_fields": "eligendi",
+        "name": "eligendi",
+        "username": "eligendi",
+        "email": "lenore05@example.org",
+        "password": "eligendi",
+        "second_password": "eligendi",
+        "phone": "eligendi",
+        "team_id": "eligendi",
+        "settings": "eligendi"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -4415,12 +4436,89 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;post("http://saelos.test/api/v1/users");</code></pre>
+$response = $client-&gt;post("http://saelos.test/api/v1/users", [
+    RequestOptions::JSON =&gt; [
+        "custom_fields" =&gt; "eligendi",
+        "name" =&gt; "eligendi",
+        "username" =&gt; "eligendi",
+        "email" =&gt; "lenore05@example.org",
+        "password" =&gt; "eligendi",
+        "second_password" =&gt; "eligendi",
+        "phone" =&gt; "eligendi",
+        "team_id" =&gt; "eligendi",
+        "settings" =&gt; "eligendi",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>POST api/v1/users</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>second_password</td>
+<td>string</td>
+<td>optional</td>
+<td>Required if the parameters <code>password</code> are present. Must be the same as <code>password</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>team_id</td>
+<td>string</td>
+<td>optional</td>
+<td>Valid team id</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_4194ceb9a20b7f80b61d14d44df366b4 -->
 <!-- START_b4ea58dd963da91362c51d4088d0d4f4 -->
 <h2>Fetch a single User</h2>
@@ -4463,12 +4561,33 @@ $response = $client-&gt;get("http://saelos.test/api/v1/users/{user}");</code></p
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT "http://saelos.test/api/v1/users/{user}" \
--H "Accept: application/json"</code></pre>
+-H "Accept: application/json" \
+    -d "custom_fields"="ab" \
+    -d "name"="ab" \
+    -d "username"="ab" \
+    -d "email"="tromp.madalyn@example.org" \
+    -d "password"="ab" \
+    -d "second_password"="ab" \
+    -d "phone"="ab" \
+    -d "team_id"="ab" \
+    -d "settings"="ab" \
+</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/users/{user}",
     "method": "PUT",
+    "data": {
+        "custom_fields": "ab",
+        "name": "ab",
+        "username": "ab",
+        "email": "tromp.madalyn@example.org",
+        "password": "ab",
+        "second_password": "ab",
+        "phone": "ab",
+        "team_id": "ab",
+        "settings": "ab"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -4478,13 +4597,90 @@ $.ajax(settings).done(function (response) {
     console.log(response);
 });</code></pre>
 <pre><code class="language-php">use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client-&gt;put("http://saelos.test/api/v1/users/{user}");</code></pre>
+$response = $client-&gt;put("http://saelos.test/api/v1/users/{user}", [
+    RequestOptions::JSON =&gt; [
+        "custom_fields" =&gt; "ab",
+        "name" =&gt; "ab",
+        "username" =&gt; "ab",
+        "email" =&gt; "tromp.madalyn@example.org",
+        "password" =&gt; "ab",
+        "second_password" =&gt; "ab",
+        "phone" =&gt; "ab",
+        "team_id" =&gt; "ab",
+        "settings" =&gt; "ab",
+    ]
+]);</code></pre>
 <h3>HTTP Request</h3>
 <p><code>PUT api/v1/users/{user}</code></p>
 <p><code>PATCH api/v1/users/{user}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>custom_fields</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>second_password</td>
+<td>string</td>
+<td>optional</td>
+<td>Required if the parameters <code>password</code> are present. Must be the same as <code>password</code></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>optional</td>
+<td>Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>team_id</td>
+<td>string</td>
+<td>optional</td>
+<td>Valid team id</td>
+</tr>
+<tr>
+<td>settings</td>
+<td>array</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
 <!-- END_296fac4bf818c99f6dd42a4a0eb56b58 -->
 <!-- START_22354fc95c42d81a744eece68f5b9b9a -->
 <h2>Delete a User</h2>

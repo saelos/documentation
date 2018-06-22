@@ -4354,7 +4354,17 @@ $response = $client->get("http://saelos.test/api/v1/users");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/users" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "custom_fields"="eligendi" \
+    -d "name"="eligendi" \
+    -d "username"="eligendi" \
+    -d "email"="lenore05@example.org" \
+    -d "password"="eligendi" \
+    -d "second_password"="eligendi" \
+    -d "phone"="eligendi" \
+    -d "team_id"="eligendi" \
+    -d "settings"="eligendi" \
+
 ```
 
 ```javascript
@@ -4363,6 +4373,17 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/users",
     "method": "POST",
+    "data": {
+        "custom_fields": "eligendi",
+        "name": "eligendi",
+        "username": "eligendi",
+        "email": "lenore05@example.org",
+        "password": "eligendi",
+        "second_password": "eligendi",
+        "phone": "eligendi",
+        "team_id": "eligendi",
+        "settings": "eligendi"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -4375,16 +4396,42 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/users");
+$response = $client->post("http://saelos.test/api/v1/users", [
+    RequestOptions::JSON => [
+        "custom_fields" => "eligendi",
+        "name" => "eligendi",
+        "username" => "eligendi",
+        "email" => "lenore05@example.org",
+        "password" => "eligendi",
+        "second_password" => "eligendi",
+        "phone" => "eligendi",
+        "team_id" => "eligendi",
+        "settings" => "eligendi",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/users`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    custom_fields | array |  optional  | 
+    name | string |  required  | Maximum: `255`
+    username | string |  required  | Maximum: `255`
+    email | email |  required  | Maximum: `255`
+    password | string |  optional  | 
+    second_password | string |  optional  | Required if the parameters `password` are present. Must be the same as `password`
+    phone | string |  optional  | Maximum: `255`
+    team_id | string |  optional  | Valid team id
+    settings | array |  optional  | 
 
 <!-- END_4194ceb9a20b7f80b61d14d44df366b4 -->
 
@@ -4445,7 +4492,17 @@ $response = $client->get("http://saelos.test/api/v1/users/{user}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/users/{user}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "custom_fields"="ab" \
+    -d "name"="ab" \
+    -d "username"="ab" \
+    -d "email"="tromp.madalyn@example.org" \
+    -d "password"="ab" \
+    -d "second_password"="ab" \
+    -d "phone"="ab" \
+    -d "team_id"="ab" \
+    -d "settings"="ab" \
+
 ```
 
 ```javascript
@@ -4454,6 +4511,17 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/users/{user}",
     "method": "PUT",
+    "data": {
+        "custom_fields": "ab",
+        "name": "ab",
+        "username": "ab",
+        "email": "tromp.madalyn@example.org",
+        "password": "ab",
+        "second_password": "ab",
+        "phone": "ab",
+        "team_id": "ab",
+        "settings": "ab"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -4466,10 +4534,23 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/users/{user}");
+$response = $client->put("http://saelos.test/api/v1/users/{user}", [
+    RequestOptions::JSON => [
+        "custom_fields" => "ab",
+        "name" => "ab",
+        "username" => "ab",
+        "email" => "tromp.madalyn@example.org",
+        "password" => "ab",
+        "second_password" => "ab",
+        "phone" => "ab",
+        "team_id" => "ab",
+        "settings" => "ab",
+    ]
+]);
 ```
 
 
@@ -4478,6 +4559,19 @@ $response = $client->put("http://saelos.test/api/v1/users/{user}");
 
 `PATCH api/v1/users/{user}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    custom_fields | array |  optional  | 
+    name | string |  required  | Maximum: `255`
+    username | string |  required  | Maximum: `255`
+    email | email |  required  | Maximum: `255`
+    password | string |  optional  | 
+    second_password | string |  optional  | Required if the parameters `password` are present. Must be the same as `password`
+    phone | string |  optional  | Maximum: `255`
+    team_id | string |  optional  | Valid team id
+    settings | array |  optional  | 
 
 <!-- END_296fac4bf818c99f6dd42a4a0eb56b58 -->
 

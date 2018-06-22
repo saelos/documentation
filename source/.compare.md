@@ -84,7 +84,18 @@ $response = $client->get("http://saelos.test/api/v1/activities");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/activities" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="dolore" \
+    -d "description"="dolore" \
+    -d "due_date"="1981-12-26" \
+    -d "fulfillment_date"="1981-12-26" \
+    -d "completed"="1" \
+    -d "company_id"="411" \
+    -d "contact_id"="411" \
+    -d "opportunity_id"="411" \
+    -d "user_id"="411" \
+    -d "details_type"="App\CallActivity" \
+
 ```
 
 ```javascript
@@ -93,6 +104,18 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/activities",
     "method": "POST",
+    "data": {
+        "name": "dolore",
+        "description": "dolore",
+        "due_date": "1981-12-26",
+        "fulfillment_date": "1981-12-26",
+        "completed": true,
+        "company_id": 411,
+        "contact_id": 411,
+        "opportunity_id": 411,
+        "user_id": 411,
+        "details_type": "App\\CallActivity"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -105,16 +128,44 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/activities");
+$response = $client->post("http://saelos.test/api/v1/activities", [
+    RequestOptions::JSON => [
+        "name" => "dolore",
+        "description" => "dolore",
+        "due_date" => "1981-12-26",
+        "fulfillment_date" => "1981-12-26",
+        "completed" => "1",
+        "company_id" => "411",
+        "contact_id" => "411",
+        "opportunity_id" => "411",
+        "user_id" => "411",
+        "details_type" => "App\CallActivity",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/activities`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  optional  | 
+    due_date | date |  optional  | 
+    fulfillment_date | date |  optional  | 
+    completed | boolean |  optional  | 
+    company_id | integer |  optional  | Valid company id
+    contact_id | integer |  optional  | Valid contact id
+    opportunity_id | integer |  optional  | Valid opportunity id
+    user_id | integer |  required  | Valid user id
+    details_type | string |  required  | `App\CallActivity`, `App\EmailActivity` or `App\SmsActivity`
 
 <!-- END_33aef576e6d971e2ba91dd3d8403d390 -->
 
@@ -175,7 +226,18 @@ $response = $client->get("http://saelos.test/api/v1/activities/{activity}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/activities/{activity}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="qui" \
+    -d "description"="qui" \
+    -d "due_date"="1976-12-25" \
+    -d "fulfillment_date"="1976-12-25" \
+    -d "completed"="1" \
+    -d "company_id"="28" \
+    -d "contact_id"="28" \
+    -d "opportunity_id"="28" \
+    -d "user_id"="28" \
+    -d "details_type"="App\CallActivity" \
+
 ```
 
 ```javascript
@@ -184,6 +246,18 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/activities/{activity}",
     "method": "PUT",
+    "data": {
+        "name": "qui",
+        "description": "qui",
+        "due_date": "1976-12-25",
+        "fulfillment_date": "1976-12-25",
+        "completed": true,
+        "company_id": 28,
+        "contact_id": 28,
+        "opportunity_id": 28,
+        "user_id": 28,
+        "details_type": "App\\CallActivity"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -196,10 +270,24 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/activities/{activity}");
+$response = $client->put("http://saelos.test/api/v1/activities/{activity}", [
+    RequestOptions::JSON => [
+        "name" => "qui",
+        "description" => "qui",
+        "due_date" => "1976-12-25",
+        "fulfillment_date" => "1976-12-25",
+        "completed" => "1",
+        "company_id" => "28",
+        "contact_id" => "28",
+        "opportunity_id" => "28",
+        "user_id" => "28",
+        "details_type" => "App\CallActivity",
+    ]
+]);
 ```
 
 
@@ -208,6 +296,20 @@ $response = $client->put("http://saelos.test/api/v1/activities/{activity}");
 
 `PATCH api/v1/activities/{activity}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    description | string |  optional  | 
+    due_date | date |  optional  | 
+    fulfillment_date | date |  optional  | 
+    completed | boolean |  optional  | 
+    company_id | integer |  optional  | Valid company id
+    contact_id | integer |  optional  | Valid contact id
+    opportunity_id | integer |  optional  | Valid opportunity id
+    user_id | integer |  required  | Valid user id
+    details_type | string |  required  | `App\CallActivity`, `App\EmailActivity` or `App\SmsActivity`
 
 <!-- END_66e6c51c201a5a8ca254ce9e8e8a63a9 -->
 
@@ -3123,7 +3225,7 @@ Parameter | Type | Status | Description
     name | string |  required  | Maximum: `255`
     probability | integer |  optional  | Between: `0` and `100`
     active | boolean |  optional  | 
-    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
 
 <!-- END_2e6018981510d64025747fa68c443d41 -->
 
@@ -3243,7 +3345,7 @@ Parameter | Type | Status | Description
     name | string |  required  | Maximum: `255`
     probability | integer |  optional  | Between: `0` and `100`
     active | boolean |  optional  | 
-    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
 
 <!-- END_f59010f3473811158a5bd76142767624 -->
 
@@ -3404,7 +3506,7 @@ Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     name | string |  required  | Maximum: `255`
     published | boolean |  optional  | 
-    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
     ordering | numeric |  optional  | 
 
 <!-- END_a7ada8c4f6e927f36d1b35bcad64309f -->
@@ -3524,7 +3626,7 @@ Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     name | string |  required  | Maximum: `255`
     published | boolean |  optional  | 
-    color | string |  optional  | Must match this regular expression: `/^#(\d|a|b|c|d|e|f){6}$/i`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
     ordering | numeric |  optional  | 
 
 <!-- END_0898bd606cefca670cfa33547d02e52d -->
@@ -3630,7 +3732,14 @@ $response = $client->get("http://saelos.test/api/v1/tags");
 
 ```bash
 curl -X POST "http://saelos.test/api/v1/tags" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="ut" \
+    -d "color"="ut" \
+    -d "activity_id"="ut" \
+    -d "contact_id"="ut" \
+    -d "company_id"="ut" \
+    -d "opportunity_id"="ut" \
+
 ```
 
 ```javascript
@@ -3639,6 +3748,14 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/tags",
     "method": "POST",
+    "data": {
+        "name": "ut",
+        "color": "ut",
+        "activity_id": "ut",
+        "contact_id": "ut",
+        "company_id": "ut",
+        "opportunity_id": "ut"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3651,16 +3768,36 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->post("http://saelos.test/api/v1/tags");
+$response = $client->post("http://saelos.test/api/v1/tags", [
+    RequestOptions::JSON => [
+        "name" => "ut",
+        "color" => "ut",
+        "activity_id" => "ut",
+        "contact_id" => "ut",
+        "company_id" => "ut",
+        "opportunity_id" => "ut",
+    ]
+]);
 ```
 
 
 ### HTTP Request
 `POST api/v1/tags`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
+    activity_id | string |  optional  | Valid activity id
+    contact_id | string |  optional  | Valid contact id
+    company_id | string |  optional  | Valid company id
+    opportunity_id | string |  optional  | Valid opportunity id
 
 <!-- END_630f8bae9314aa07bc76748bf619eb33 -->
 
@@ -3721,7 +3858,14 @@ $response = $client->get("http://saelos.test/api/v1/tags/{tag}");
 
 ```bash
 curl -X PUT "http://saelos.test/api/v1/tags/{tag}" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "name"="sequi" \
+    -d "color"="sequi" \
+    -d "activity_id"="sequi" \
+    -d "contact_id"="sequi" \
+    -d "company_id"="sequi" \
+    -d "opportunity_id"="sequi" \
+
 ```
 
 ```javascript
@@ -3730,6 +3874,14 @@ var settings = {
     "crossDomain": true,
     "url": "http://saelos.test/api/v1/tags/{tag}",
     "method": "PUT",
+    "data": {
+        "name": "sequi",
+        "color": "sequi",
+        "activity_id": "sequi",
+        "contact_id": "sequi",
+        "company_id": "sequi",
+        "opportunity_id": "sequi"
+},
     "headers": {
         "accept": "application/json"
     }
@@ -3742,10 +3894,20 @@ $.ajax(settings).done(function (response) {
 
 ```php
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 $client = new Client;
 
-$response = $client->put("http://saelos.test/api/v1/tags/{tag}");
+$response = $client->put("http://saelos.test/api/v1/tags/{tag}", [
+    RequestOptions::JSON => [
+        "name" => "sequi",
+        "color" => "sequi",
+        "activity_id" => "sequi",
+        "contact_id" => "sequi",
+        "company_id" => "sequi",
+        "opportunity_id" => "sequi",
+    ]
+]);
 ```
 
 
@@ -3754,6 +3916,16 @@ $response = $client->put("http://saelos.test/api/v1/tags/{tag}");
 
 `PATCH api/v1/tags/{tag}`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Maximum: `255`
+    color | string |  optional  | Must match this regular expression: `/^#(\d|[a-f]){6}$/i`
+    activity_id | string |  optional  | Valid activity id
+    contact_id | string |  optional  | Valid contact id
+    company_id | string |  optional  | Valid company id
+    opportunity_id | string |  optional  | Valid opportunity id
 
 <!-- END_bc9cb4c2371521e7e1379696effcfa43 -->
 

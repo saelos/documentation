@@ -767,7 +767,6 @@ $response = $client->get("http://saelos.test/api/v1/companies/{company}/notes");
 ```bash
 curl -X POST "http://saelos.test/api/v1/companies/{company}/notes" \
 -H "Accept: application/json" \
-    -d "note_name"="illo" \
     -d "note_content"="illo" \
     -d "private"="1" \
 
@@ -780,7 +779,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/companies/{company}/notes",
     "method": "POST",
     "data": {
-        "note_name": "illo",
         "note_content": "illo",
         "private": true
 },
@@ -802,7 +800,6 @@ $client = new Client;
 
 $response = $client->post("http://saelos.test/api/v1/companies/{company}/notes", [
     RequestOptions::JSON => [
-        "note_name" => "illo",
         "note_content" => "illo",
         "private" => "1",
     ]
@@ -817,7 +814,6 @@ $response = $client->post("http://saelos.test/api/v1/companies/{company}/notes",
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
@@ -881,7 +877,6 @@ $response = $client->get("http://saelos.test/api/v1/companies/{company}/notes/{n
 ```bash
 curl -X PUT "http://saelos.test/api/v1/companies/{company}/notes/{note}" \
 -H "Accept: application/json" \
-    -d "note_name"="nihil" \
     -d "note_content"="nihil" \
     -d "private"="1" \
 
@@ -894,7 +889,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/companies/{company}/notes/{note}",
     "method": "PUT",
     "data": {
-        "note_name": "nihil",
         "note_content": "nihil",
         "private": true
 },
@@ -916,7 +910,6 @@ $client = new Client;
 
 $response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{note}", [
     RequestOptions::JSON => [
-        "note_name" => "nihil",
         "note_content" => "nihil",
         "private" => "1",
     ]
@@ -933,7 +926,6 @@ $response = $client->put("http://saelos.test/api/v1/companies/{company}/notes/{n
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
@@ -1039,7 +1031,6 @@ $response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes");
 ```bash
 curl -X POST "http://saelos.test/api/v1/contacts/{contact}/notes" \
 -H "Accept: application/json" \
-    -d "note_name"="quo" \
     -d "note_content"="quo" \
     -d "private"="1" \
 
@@ -1052,7 +1043,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/contacts/{contact}/notes",
     "method": "POST",
     "data": {
-        "note_name": "quo",
         "note_content": "quo",
         "private": true
 },
@@ -1074,7 +1064,6 @@ $client = new Client;
 
 $response = $client->post("http://saelos.test/api/v1/contacts/{contact}/notes", [
     RequestOptions::JSON => [
-        "note_name" => "quo",
         "note_content" => "quo",
         "private" => "1",
     ]
@@ -1089,7 +1078,6 @@ $response = $client->post("http://saelos.test/api/v1/contacts/{contact}/notes", 
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
@@ -1153,7 +1141,6 @@ $response = $client->get("http://saelos.test/api/v1/contacts/{contact}/notes/{no
 ```bash
 curl -X PUT "http://saelos.test/api/v1/contacts/{contact}/notes/{note}" \
 -H "Accept: application/json" \
-    -d "note_name"="necessitatibus" \
     -d "note_content"="necessitatibus" \
     -d "private"="1" \
 
@@ -1166,7 +1153,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/contacts/{contact}/notes/{note}",
     "method": "PUT",
     "data": {
-        "note_name": "necessitatibus",
         "note_content": "necessitatibus",
         "private": true
 },
@@ -1188,7 +1174,6 @@ $client = new Client;
 
 $response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{note}", [
     RequestOptions::JSON => [
-        "note_name" => "necessitatibus",
         "note_content" => "necessitatibus",
         "private" => "1",
     ]
@@ -1205,7 +1190,6 @@ $response = $client->put("http://saelos.test/api/v1/contacts/{contact}/notes/{no
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
@@ -2526,7 +2510,6 @@ $response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/
 ```bash
 curl -X POST "http://saelos.test/api/v1/opportunities/{opportunity}/notes" \
 -H "Accept: application/json" \
-    -d "note_name"="ut" \
     -d "note_content"="ut" \
     -d "private"="1" \
 
@@ -2539,7 +2522,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/opportunities/{opportunity}/notes",
     "method": "POST",
     "data": {
-        "note_name": "ut",
         "note_content": "ut",
         "private": true
 },
@@ -2561,7 +2543,6 @@ $client = new Client;
 
 $response = $client->post("http://saelos.test/api/v1/opportunities/{opportunity}/notes", [
     RequestOptions::JSON => [
-        "note_name" => "ut",
         "note_content" => "ut",
         "private" => "1",
     ]
@@ -2576,7 +2557,6 @@ $response = $client->post("http://saelos.test/api/v1/opportunities/{opportunity}
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
@@ -2640,7 +2620,6 @@ $response = $client->get("http://saelos.test/api/v1/opportunities/{opportunity}/
 ```bash
 curl -X PUT "http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}" \
 -H "Accept: application/json" \
-    -d "note_name"="quaerat" \
     -d "note_content"="quaerat" \
     -d "private"="1" \
 
@@ -2653,7 +2632,6 @@ var settings = {
     "url": "http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}",
     "method": "PUT",
     "data": {
-        "note_name": "quaerat",
         "note_content": "quaerat",
         "private": true
 },
@@ -2675,7 +2653,6 @@ $client = new Client;
 
 $response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/notes/{note}", [
     RequestOptions::JSON => [
-        "note_name" => "quaerat",
         "note_content" => "quaerat",
         "private" => "1",
     ]
@@ -2692,7 +2669,6 @@ $response = $client->put("http://saelos.test/api/v1/opportunities/{opportunity}/
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    note_name | string |  required  | Maximum: `255`
     note_content | string |  required  | 
     private | boolean |  optional  | 
 
